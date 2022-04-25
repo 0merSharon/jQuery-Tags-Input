@@ -11,7 +11,7 @@
     $.fn.tagsInputDestroy = function() {
         let id = $(this).attr('name');
         // reset target input
-        $(this).removeAttr("style").removeAttr("data-tagsinput-init").attr("id", id);
+        $(this).removeAttr("style data-tagsinput-init").attr("id", id);
         // remove the generated tags div
         $(this).next().remove();
     };
